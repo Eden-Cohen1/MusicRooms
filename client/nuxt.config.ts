@@ -2,6 +2,7 @@
 // @ts-nocheck
 export default defineNuxtConfig({
   base: "/client/",
+  ssr: false,
   target: "static",
   devtools: { enabled: true },
   modules: [
