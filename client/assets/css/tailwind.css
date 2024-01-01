@@ -6,22 +6,56 @@
   :root {
     --color-primary: #ffffff;
     --color-sec: #eaeff4;
-    --color-third: #f8fafc;
-    --color-btn: #33a06f;
-    --color-btn-hover: #2d7f5a;
+    --color-third: #f5f7fa;
+    /* --color-third: #f8fafc; */
+    --color-btn: #5680e9;
+    --color-btn-hover: #3367eb;
     --color-text: #3b485c;
     --color-btn-txt: #d1d8e0;
     --color-light-text: rgba(76, 76, 88, 0.844);
-    --color-border: rgba(27, 27, 28, 0.185);
+    --color-border: rgba(141, 141, 146, 0.185);
   }
   :root[class~="dark"] {
-    --color-primary: #1a1a1a;
-    --color-sec: #242424;
-    --color-third: #2c2c2c;
-    --color-btn: #33a06f;
+    --color-primary: #0b0c10;
+    --color-sec: #1f2833;
+    --color-third: #131620;
+    --color-btn: #5680e9;
+    --color-btn-hover: #3367eb;
     --color-text: #d1d8e0;
     --color-btn-txt: black;
     --color-border: rgba(255, 255, 255, 0.185);
     --color-light-text: rgba(255, 255, 255, 0.43);
+  }
+}
+
+@layer components {
+  .input {
+    @apply border-b-[3px] border-solid border-borderColor text-txt w-72 sm:w-80 p-2 pl-1.5 text-sm bg-primary;
+  }
+  .btn-primary {
+    @apply rounded-3xl bg-btn px-3 py-1.5 font-medium text-white shadow-sm hover:bg-btnHover text-center cursor-pointer;
+  }
+
+  .radial-grad {
+    background-image: radial-gradient(
+      circle,
+      #5680e9,
+      #4475c4,
+      #3f6fa8,
+      #31537c,
+      #1f2833
+    );
+  }
+  /* .radial-grad {
+    background: rgb(36, 16, 68);
+    background: linear-gradient(
+      146deg,
+      rgba(36, 16, 68, 1) 14%,
+      rgba(90, 35, 177, 1) 77%,
+      rgba(119, 62, 209, 1) 100%
+    );
+  } */
+  button.radial-grad:hover {
+    background: var(--color-btn-hover);
   }
 }

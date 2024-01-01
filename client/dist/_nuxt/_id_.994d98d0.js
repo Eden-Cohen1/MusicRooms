@@ -1,1 +1,0 @@
-import{_ as e,c,o,a as s}from"./entry.552d39f9.js";const n={},t=s("div",{class:"w-96 h-96 bg-red-400 rounded-2xl"},null,-1),_=[t];function a(r,d){return o(),c("main",null,_)}const i=e(n,[["render",a]]);export{i as default};

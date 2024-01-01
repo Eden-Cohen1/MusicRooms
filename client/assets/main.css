@@ -1,0 +1,37 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  transition: background-color 300ms ease;
+}
+
+input {
+  outline: none;
+  transition: background 300ms;
+}
+
+button:disabled:hover,
+input:disabled:hover {
+  background-color: rgb(166, 180, 174);
+  cursor: auto;
+}
+@keyframes hover-grow {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hover-shrink {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

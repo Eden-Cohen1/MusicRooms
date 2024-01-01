@@ -1,1 +1,0 @@
-{"id":"eda57228-a3d3-4ed1-83b1-979a2afe1dcc","timestamp":1703439244542,"matcher":{"static":{"/":{"prerender":true},"/user":null,"/user/123":{"prerender":true},"/test":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/user/login"]}
